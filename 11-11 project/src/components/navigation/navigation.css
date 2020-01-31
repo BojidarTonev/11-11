@@ -1,0 +1,23 @@
+.site-nav {
+    position: relative;
+    top: 8em;
+}
+
+.site-nav ul {
+    display: flex;
+
+}
+
+.site-nav ul li {
+    padding: 0 2em;
+    list-style-type: none;
+}
+
+
+
+
+
+
+.some-link a:visited{
+    color: white;
+}

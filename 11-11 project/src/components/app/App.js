@@ -31,7 +31,7 @@ const App = () => {
       <div>
         <Header />
         <Switch>
-          <Route path="/" exact render={render("Who are we?", Index)}/>
+          <Route path="/" exact render={render("Welcome", Index)}/>
           <Route path="/about" render={render("About", About)}/>
           <Route path="/contact" render={render("Contact us", Contact)} />
           <Route path="/artwork" render={render("Artwork", Artwork)} />
@@ -45,8 +45,8 @@ const App = () => {
 };
 
 function GetDescription(title) {
-  if(title === "Who are we?"){
-    return ""
+  if(title === "Welcome"){
+    return "Welcome to the the studio web site, here you can see information about me, book tattoo or just go through my artwork. Enjoy!"
   } else if (title === "About"){
     return "";
   } else if (title === "Artwork"){

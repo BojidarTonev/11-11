@@ -2,6 +2,10 @@
     /*layout variables*/
 
     /*Main colors in project*/
+    --main-black: black;
+    --main-white: white;
+    --main-gray: #708090;
+    --main-gold: #CFB53B;
 
     /*Transparent colors in project*/
 }

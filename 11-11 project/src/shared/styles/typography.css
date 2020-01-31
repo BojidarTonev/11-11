@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Notable&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
 
 *, *:before, *:after{
     margin: 0;
@@ -34,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1em;
     margin-bottom: 0.5em;
     font-weight: normal;
-    font-family: 'Notable', sans-serif;
+    font-family: 'Alfa Slab One', cursive;
 }
 
 h1 { font-size: 2.6em; }

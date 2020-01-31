@@ -1,7 +1,7 @@
 body {
-    /* background: url('../../static/images/background-image.jpg'); */
+    background: url('../../static/images/background-image.jpg');
     
-    color: #a39d87;
+    color: rgba(197, 194, 194, 1);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,4 +11,8 @@ body {
     max-width: var(--layout-main-width, 70em);
     margin: 0 auto;
 
+}
+
+.some-link {
+    list-style-type: none;
 }

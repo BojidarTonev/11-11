@@ -1,0 +1,12 @@
+.site-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 25em;
+    width: 100%;
+    background-image: url("../../static/images/background-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
