@@ -1,0 +1,35 @@
+.contact-me-at {
+    padding: 1.5em 0;
+}
+
+.site-contact h2 {
+    display: inline-block;
+    border-bottom: 3px solid var(--main-gold, red);
+}
+
+.contact-me-at {
+    background: black;
+}
+
+.contact-me-at ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+}
+
+.contact-me-at ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1em 2em;
+}
+
+.contact-me-at ul li i {
+    font-size: 2em;
+    color: var(--main-gold, red);
+}

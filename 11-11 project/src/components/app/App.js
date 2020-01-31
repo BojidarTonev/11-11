@@ -33,7 +33,7 @@ const App = () => {
         <Switch>
           <Route path="/" exact render={render("Welcome", Index)}/>
           <Route path="/about" render={render("About", About)}/>
-          <Route path="/contact" render={render("Contact us", Contact)} />
+          <Route path="/contact" render={render("Contact me", Contact)} />
           <Route path="/artwork" render={render("Artwork", Artwork)} />
 
           <Route path="*" render={render("Not found", NotFound)} />
@@ -51,8 +51,8 @@ function GetDescription(title) {
     return "";
   } else if (title === "Artwork"){
     return ""
-  } else if (title === "Contact us"){
-    return ""
+  } else if (title === "Contact me"){
+    return "Below are all the social media you can find me on, and all the ways you can get in touch with me!"
   }
   return "Sorry, url may be broken, but page not found ;("
 }

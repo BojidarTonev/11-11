@@ -1,0 +1,28 @@
+.site-contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 13em;
+    padding: 2em 0;
+
+}
+
+.contact-information h1 {
+    background: black;
+    color: var(--main-gold, red);
+}
+
+.contact-information p {
+    padding: 0;
+    background: black;
+    color: var(--main-gold, red);
+}
+
