@@ -1,23 +1,19 @@
-.site-main-description {
+.additional-information {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 15em;
-
-    
+    height: 13em;
+    padding: 2em 0;
 }
 
-.site-main-description p {
+.additional-information h1 {
     background: black;
     color: var(--main-gold, red);
-    width: 80ch;
-    padding: 0.2em;
 }
 
-.site-main-description h1 {
+.additional-information p {
+    padding: 0 1em;
     background: black;
     color: var(--main-gold, red);
-    padding: 0.2em;
 }

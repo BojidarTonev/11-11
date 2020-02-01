@@ -2,30 +2,30 @@ import React from "react";
 import "./content-box.css";
 
 function ContentBox(props) {
-  const position = props.position;
-  if(position == "left"){
+  const {position, heading, text, icon, price} = props;
+  if(position === "left"){
     return (
-      <div className={`service-box service-box-${props.position}`}>
-        <div className={`content content-${props.position}`}>
-        <h5>{props.heading}</h5>
-            <p>{props.text}</p>
-          <small>From {props.price}$</small>
+      <div className={`service-box service-box-${position}`}>
+        <div className={`content content-${position}`}>
+        <h5>{heading}</h5>
+            <p>{text}</p>
+          <small>From {price}$</small>
         </div>
         <div className={`icon icon-${position}`}>
-          {props.icon}
+          {icon}
         </div>
       </div>
     );
   } else {
     return (
-      <div className={`service-box service-box-${props.position}`}>
+      <div className={`service-box service-box-${position}`}>
         <div className={`icon icon-${position}`}>
-          {props.icon}
+          {icon}
         </div>
-        <div className={`content content-${props.position}`}>
-        <h5>{props.heading}</h5>
-            <p>{props.text}</p>
-          <small>From {props.price}$</small>
+        <div className={`content content-${position}`}>
+        <h5>{heading}</h5>
+            <p>{text}</p>
+          <small>From {price}$</small>
         </div>
       </div>
     );

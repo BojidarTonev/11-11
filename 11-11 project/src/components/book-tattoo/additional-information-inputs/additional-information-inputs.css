@@ -1,42 +1,44 @@
-.contact-form {
-    background-image: url("../../../static/images/contact-from-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top 20% right 30%;
-    height: 33em;
-    width: 100%;
-
-    display: flex;
+.additional-information-inputs {
+    height: 31em;
 }
 
-.contact-form form {
-    background: rgba(0, 0, 0, 0.4);
+.additional-information-inputs {
+    background: rgba(0, 0, 0, 0.5);
     width: 50em;
-    margin: 2em 0 2em 6em;
+    margin: 2.5em 6em;
 }
 
-.contact-form form input {
+.additional-information-inputs input {
     background: none;
     border: none;
-    height: 3em;
+    height: 2.5em;
     border-bottom: 3px solid var(--main-gold);
     width: 24%;
     margin-top: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
-.contact-form form input[name="email"]{
+.additional-information-inputs input[name="email"]{
     margin-left: 10em;
 }
 
-.contact-form form textarea {
+.additional-information-inputs input[name="date"]{
+    width: 70%;
+}
+
+.additional-information-inputs input[type="file"]{
+    width: 70%;
+}
+
+
+.additional-information-inputs textarea {
     background: none;
     border: none;
     border-bottom: 3px solid var(--main-gold);
     color: white;
 }
 
-.contact-form form button {
+.additional-information-inputs button {
     margin: 2em 0;
     padding: 1em 6em;
     background: var(--main-gold, red);

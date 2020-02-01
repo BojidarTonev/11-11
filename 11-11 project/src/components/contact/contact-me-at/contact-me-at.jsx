@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from '../../../shared/link/link'
 import './contact-me-at.css';
 
 function ContactMeAt() {
@@ -26,10 +27,14 @@ function ContactMeAt() {
     <h2>Find me online:</h2>
     <ul>
       <li>
-        <i class="fab fa-facebook-f"></i>
+          <Link to="">
+            <i class="fab fa-facebook-f"></i>
+          </Link>
       </li>
       <li>
-        <i class="fab fa-instagram"></i>
+        <Link to="">
+            <i class="fab fa-instagram"></i>
+        </Link>
       </li>
     </ul>
   </div>

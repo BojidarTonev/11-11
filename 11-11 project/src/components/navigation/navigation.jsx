@@ -8,7 +8,7 @@ function Navigation() {
       <ul>
         <Link to="/artwork/all">Artwork</Link>
         <Link to="/contact">Contact</Link>
-        <Link to="/about">Book tattoo</Link>
+        <Link to="/book-tattoo">Book tattoo</Link>
       </ul>
     </nav>
   );

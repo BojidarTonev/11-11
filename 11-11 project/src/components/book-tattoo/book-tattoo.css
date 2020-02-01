@@ -1,0 +1,36 @@
+.book-tattoo {
+  text-align: center;
+  
+}
+
+.book-tattoo form {
+    width: 100%;
+}
+
+.date-picker-wrapper p {
+    width: 70ch;
+}
+
+.additional-information-inputs-wrapper {
+    background-image: url("../../static/images/submit-booking-inputs-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 80% right 30%;
+    height: 35em;
+    width: 100%;
+    display: flex;
+}
+
+.date-picker-wrapper {
+    padding: 1em 5em;
+    height: 55em;
+    background: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.additional-information-inputs-wrapper .additional-contact-information {
+    margin: 5em 0;
+}
