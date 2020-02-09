@@ -1,0 +1,110 @@
+.tattoo-details-modal-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+    position: fixed;
+    top: 21%;
+    left: 45%;
+    width:40em;
+    height: 45em;
+    margin-top: -9em; /* set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width */
+    border: .4em solid var(--main-gold, red);
+    pointer-events: auto;
+    filter: blur(0px) grayscale(0%) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+
+    transition: all 0.4s ease-in-out;
+}
+
+.tattoo-details-modal-wrapper button {
+    padding: .8em 5em;
+    margin-top: -1em;
+    border-radius: .5em;
+    border: 3px solid var(--main-gold, red);
+    color: var(--main-gold, red);
+    background-color: black;
+    font-size: .8em;
+    font-weight: 1000;
+
+    transition: all .2s ease-in-out;
+}
+
+.modal-description {
+    width: 100%;
+    background: black;
+}
+
+.modal-description small {
+    margin-bottom: 2em;
+}
+
+.modal-description h3, h4 {
+    color: var(--main-gold, red);
+    margin: 0 !important;
+}
+
+.tattoo-details-modal-wrapper button:hover {
+    border: 3px solid black;
+    background: var(--main-gold, red);
+    color: black;
+}
+
+.tattoo-details-body {
+    width: auto;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 1em 1em 0 1em;
+}
+
+.hideModal {
+    z-index: -1;
+    opacity: 0;
+    animation: hide .25s;
+    transform: scale(0);
+}
+
+.modalIsOpen {
+    height: 100%;
+    /* filter: blur(3px) grayscale(70%); */
+    transition: all 0.5s ease-in-out;
+}
+
+.modalIsOpen .tattoo-details-modal-wrapper {
+    opacity: 1;
+    z-index: 4;
+    animation: show .2s;
+    filter: blur(0) !important;
+    
+    transform: scale(1);
+}
+
+@keyframes hide {
+    from {
+        z-index: 4;
+        transform: scale(1);
+        opacity: 1;
+    } to {
+        z-index: -1;
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes show {
+    from {
+        transform: scale(0);
+        opacity: 0;
+        z-index: -1;
+    } to {
+        transform: scale(1);
+        opacity: 1;
+        z-index: 4;
+    }
+}

@@ -1,0 +1,93 @@
+.tattoos-search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url("../../../static/images/footer-background-image.jpg");
+    width: 75%;
+    height: 5em;
+    margin: 2em 4em;
+    padding: 1em 5em;
+}
+
+.search-tattoos-button {
+    height: 5em;
+    width: 5em;
+    margin-top: 1em;
+    
+    background: black;
+    border: 2px solid var(--main-gold, red);
+    border-radius: 5em;
+
+    transition: all .2s ease-in-out;
+}
+
+.search-tattoos-button i {
+    color: #708090;
+    font-size: 2em;
+    transition: all .3s ease-in-out;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: black;
+
+    padding: 0.4em 2.5em;
+    margin: 0.9em 2em;
+
+    border: 2px solid var(--main-gold, red);
+    border-radius: 1em;
+    color: var(--main-gold, red);
+    width: 12em;
+
+    transition: all .5s ease-in-out;
+}
+
+.dropdown-items {
+    position: absolute;
+    background: black;
+    border: 2px solid var(--main-gold, red);
+    z-index: 3;
+    overflow: visible;
+    border-radius: 0.5em;
+    width: 11em;
+    padding-bottom: 0.3em;
+    margin-top: 1.8em;
+
+    transition: all .5s ease-in-out;
+}
+
+.is-open {
+    opacity: 1 !important;
+}
+
+.dropdown-arrow {
+    /* color: green;
+    background: green; */
+    height: 1em;
+    width: 1em;
+    margin-top: -1.2em;
+    margin-left: 5em;
+    display: block
+}
+
+
+
+
+
+
+
+.search-tattoos-button:hover {
+    background: #708090;
+}
+.search-tattoos-button:hover > i {
+    color: black;
+    font-size: 2.7em;
+}
+
+.dropdowns {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,71 @@
+.tattoo-card {
+    width: 20em;
+    height: 25em;
+
+
+    border: .4em solid var(--main-gold, red);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    list-style: none outside;
+    position: relative;
+    overflow: hidden;
+  
+    transition: all 0.5s ease-in-out;
+}
+  
+  .tattoo-card:before {
+    display: block;
+    content: "";
+    padding-top: 50%;
+  }
+  
+  .tattoo-card img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .tattoo-card > .some-link {
+    display: block;
+  
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    
+  }
+  
+  .tattoo-card > .some-link:hover img {
+    position: relative;
+    z-index: 1;
+    
+  }
+  
+  .tattoo-card > .some-link:hover:before {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+  
+    background: rgba(0, 0, 0, 0.7);
+    transition: all .5s ease-in-out;
+  }
+  .some-link {
+    transition: all .5s ease-in-out;
+  }
+  
+  .tattoo-card > .some-link:hover strong {
+    position: absolute;
+    top: 5em;
+    left: 3em;
+    z-index: 3;
+    color: var(--main-gold, red);
+  }

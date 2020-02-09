@@ -1,0 +1,18 @@
+.artowrk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.artowrk-content {
+    margin: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4em;
+}
+
+.artowrk p {
+    padding: .3em 0;
+}
