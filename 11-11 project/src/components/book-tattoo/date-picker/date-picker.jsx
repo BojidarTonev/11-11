@@ -5,9 +5,9 @@ import { Calendar, Views } from "react-big-calendar";
 import moment from "moment";
 import * as dates from "../../../utils/dates";
 import "./date-picker.css";
-import { useEffect } from "react";
 
 let allViews = Object.keys(Views).map(k => Views[k]);
+
 
 const ColoredDateCellWrapper = ({ children }) =>
   React.cloneElement(React.Children.only(children), {
@@ -24,18 +24,12 @@ class DatePicker extends Component {
   }
 
   componentDidMount() {
-    let todayElement = document.getElementsByClassName("rbc-btn-group")[0]
-      .children[0];
-    todayElement.click();
-
     //Remove the unnesecery buttons
-    let buttons = document.getElementsByClassName("rbc-btn-group")[1]
-        .children;
-      for (let i = 0; i < buttons.length; i++) {
-        if (i == 1 || i == 2 || i == 3) {
-          buttons[i].style.display = "none";
-        }
-      }
+    console.log(Views)
+    let buttons = document.getElementsByClassName("rbc-btn-group")[1].children;
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].style.display = "none";
+    }
   }
 
   render() {
@@ -51,7 +45,7 @@ class DatePicker extends Component {
             -1,
             "hours"
           )}
-          defaultDate={new Date(2015, 3, 1)}
+          defaultDate={new Date()}
           components={{
             timeSlotWrapper: ColoredDateCellWrapper
           }}
