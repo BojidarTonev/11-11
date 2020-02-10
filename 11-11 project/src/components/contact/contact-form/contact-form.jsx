@@ -12,7 +12,7 @@ function ContactForm() {
         <div className="lower-part">
           <textarea rows="12" cols="70" />
         </div>
-        <button type="submit">SEND</button>
+        <button type="submit" class="submit-button">SEND</button>
       </form>
       <div className="additional-contact-information">
         <h3>When you send me an email:</h3>

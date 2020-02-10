@@ -16,7 +16,7 @@ class Artwork extends Component {
     }
   }
   
-  onDataGot = function(data) {
+  onDataGot = (data) => {
     let _this = this;
 
     let timeout = setTimeout(function(){
@@ -26,7 +26,7 @@ class Artwork extends Component {
     }, 2000)
   }
 
-  onSearchClick = function(e) {
+  onSearchClick = () => {
     this.setState({ loading: true })
   }
 
@@ -35,7 +35,7 @@ class Artwork extends Component {
 
     return (
       <div className="artowrk">
-        <TattoosSearchBar onDataGot={this.onDataGot.bind(this)} onSearchClick={this.onSearchClick.bind(this)} />
+        <TattoosSearchBar onDataGot={this.onDataGot} onSearchClick={this.onSearchClick} />
         <div className="artowrk-content">
           {loading ? <LoadingSpinner /> : <AllTattoos tattoos={tattoos} />}
         </div>

@@ -27,7 +27,8 @@ class TattoosSearchBar extends Component {
 
   handleClick = (e) => {
     e.preventDefault();
-
+    this.props.onSearchClick(e);
+    
     let _this = this;
     if (this.state.selectedStyle) {
       axios

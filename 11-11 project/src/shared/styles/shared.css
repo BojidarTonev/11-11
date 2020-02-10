@@ -1,0 +1,9 @@
+.submit-button {
+    margin: 2em 0;
+    padding: 1em 6em;
+    background: var(--main-gold, red);
+    border: 3px solid black;
+    cursor: pointer;
+
+    transition: all .3s ease-in-out;
+}

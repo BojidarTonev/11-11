@@ -27,21 +27,21 @@ function BookTattoo() {
         <div className="additional-information-inputs-wrapper">
           <AdditionalInformationInputs />
           <div className="additional-contact-information">
-          <h3>When you send me an email:</h3>
-          <p>
-            Please complete correct information in the fields above so I can
-            contact you later again via email. When you send the message it gets
-            automatically send to my business email.
-          </p>
-          <br/>
-          <h3>Before you send an image:</h3>
-          <p>
-            Before you send an image please make sure you are sending a nice
-            and clear photo/wallpaper of the desired image. If needed send 2-3
-            photos from all the angles, since from there I will get the cope
-            of the tattoo before I put it on your skin.
-          </p>
-      </div>
+            <h3>When you send me an email:</h3>
+            <p>
+              Please complete correct information in the fields above so I can
+              contact you later again via email. When you send the message it
+              gets automatically send to my business email.
+            </p>
+            <br />
+            <h3>Before you send an image:</h3>
+            <p>
+              Before you send an image please make sure you are sending a nice
+              and clear photo/wallpaper of the desired image. If needed send 2-3
+              photos from all the angles, since from there I will get the cope
+              of the tattoo before I put it on your skin.
+            </p>
+          </div>
         </div>
       </form>
     </div>

@@ -30,19 +30,11 @@
     width: 70%;
 }
 
-
 .additional-information-inputs textarea {
     background: none;
     border: none;
     border-bottom: 3px solid var(--main-gold);
     color: white;
-}
-
-.additional-information-inputs button {
-    margin: 2em 0;
-    padding: 1em 6em;
-    background: var(--main-gold, red);
-    border: 3px solid black;
 }
 
 .additional-contact-information {

@@ -6,7 +6,7 @@
     text-align: center;
     height: 15em;
 
-    
+    animation: .5s ease-out 0s 1 slideInFromLeft;
 }
 
 .site-main-description p {

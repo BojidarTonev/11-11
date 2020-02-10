@@ -15,7 +15,7 @@ function AdditionalInformationInputs() {
         <br/>
         <textarea rows="8" cols="63" />
       </div>
-      <button type="submot">SEND</button>
+      <button type="submot" class="submit-button">SEND</button>
     </div>
   );
 }
