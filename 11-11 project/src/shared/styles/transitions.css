@@ -1,0 +1,79 @@
+/* Navigation transitions */
+.site-nav a:hover::after {
+    width: 100%;
+}
+
+.site-nav .selected-link:hover::after {
+    width: 0%;
+}
+
+.site-header a:hover::after {
+    width: 100%;
+}
+/* ============================================================================================= */
+
+/* Tattoo details modal transitions */
+.tattoo-details-modal-wrapper button:hover {
+    border: 3px solid black;
+    background: var(--main-gold, red);
+    color: black;
+}
+/* ============================================================================================= */
+
+/* Tattoos search bar transitions */
+.search-tattoos-button:hover {
+    background: #708090;
+}
+.search-tattoos-button:hover > i {
+    color: black;
+    font-size: 2.7em;
+}
+/* ============================================================================================= */
+
+/* Tattoo cards transitions */
+.tattoo-card > .some-link:hover strong {
+    position: absolute;
+    top: 5em;
+    left: 3em;
+    z-index: 3;
+    color: var(--main-gold, red);
+  }
+
+  .tattoo-card > .some-link:hover img {
+    position: relative;
+    z-index: 1;
+    
+  }
+  
+  .tattoo-card > .some-link:hover:before {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+    background: rgba(0, 0, 0, 0.7);
+  }
+/* ============================================================================================= */
+
+/* Index page transitions */
+.more-information .some-link a:hover {
+    border: 3px solid var(--main-gold);
+    color: var(--main-gold, red) !important;
+    background: black;
+}
+/* ============================================================================================= */
+
+/* Contact page transitions */
+.contact-me-at .some-link:hover {
+    background: var(--main-gold, red);
+    border-radius: 5em;
+}
+
+.contact-me-at .some-link:hover > a i {
+    color: black;
+}
+/* ============================================================================================= */
+

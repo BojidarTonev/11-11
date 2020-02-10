@@ -1,23 +1,31 @@
 .site-nav {
-    position: relative;
-    top: 8em;
-}
-
-.site-nav ul {
     display: flex;
-
+    position: relative;
+    top: 7.5em;
 }
 
-.site-nav ul li {
-    padding: 0 2em;
-    list-style-type: none;
+.selected-link {
+    border-bottom: 4px solid var(--main-gold, red);
 }
 
+.selected-link:visited {
+    color: white;
+}
 
+.site-nav a {
+    display: inline-block;
+    margin: 0 3em;
+}
 
+.site-nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--main-gold, red);
+    transition: width .3s;
+}
 
-
-
-.some-link a:visited{
+.site-nav a:visited{
     color: white;
 }

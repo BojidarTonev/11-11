@@ -49,12 +49,6 @@
     margin: 0 !important;
 }
 
-.tattoo-details-modal-wrapper button:hover {
-    border: 3px solid black;
-    background: var(--main-gold, red);
-    color: black;
-}
-
 .tattoo-details-body {
     width: auto;
     height: auto;

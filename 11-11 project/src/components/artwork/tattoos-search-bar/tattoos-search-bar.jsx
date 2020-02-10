@@ -9,7 +9,7 @@ class TattoosSearchBar extends Component {
 
     this.state = {
       styles: [
-        { value: "neo-traditional", label: "Neo Traditional" },
+        { value: "neo-traditional", label: "Neo traditional" },
         { value: "polynesian", label: "Polynesian" },
         { value: "japanese-traditional", label: "Japanese Traditional" },
         { value: "realistic", label: "Realistic" },
@@ -25,7 +25,7 @@ class TattoosSearchBar extends Component {
     };
   }
 
-  handleClick(e) {
+  handleClick = (e) => {
     e.preventDefault();
 
     let _this = this;
@@ -47,7 +47,7 @@ class TattoosSearchBar extends Component {
     
   }
 
-  onSelect(e) {
+  onSelect = (e) => {
     let value = e.value;
     if (value === "desc" || value === "asc") {
       this.setState({ selectedDate: value });
@@ -77,7 +77,7 @@ class TattoosSearchBar extends Component {
           <Dropdown
             className="dropdown"
             options={this.state.dates}
-            onChange={this.onSelect.bind(this)}
+            onChange={this.onSelect}
             value={this.state.selectedDate}
             menuClassName="dropdown-items"
             arrowClassName="dropdown-arrow"
@@ -87,7 +87,7 @@ class TattoosSearchBar extends Component {
           <Dropdown
             className="dropdown"
             options={this.state.styles}
-            onChange={this.onSelect.bind(this)}
+            onChange={this.onSelect}
             value={this.state.selectedStyle}
             menuClassName="dropdown-items"
             arrowClassName="dropdown-arrow"
@@ -98,7 +98,7 @@ class TattoosSearchBar extends Component {
         <button
           type="submit"
           className="search-tattoos-button"
-          onClick={this.handleClick.bind(this)}
+          onClick={this.handleClick}
         >
           <i className="fas fa-search"></i>
         </button>

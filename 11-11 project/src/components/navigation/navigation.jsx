@@ -1,15 +1,14 @@
 import React from 'react';
 import Link from '../../shared/link/link'
+import { NavLink } from 'react-router-dom';
 import './navigation.css';
 
 function Navigation() {
   return (
     <nav className="site-nav">
-      <ul>
-        <Link to="/artwork/all">Artwork</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/book-tattoo">Book tattoo</Link>
-      </ul>
+        <NavLink to="/artwork/all" activeClassName="selected-link">Artwork</NavLink>
+        <NavLink to="/contact" activeClassName="selected-link">Contact</NavLink>
+        <NavLink to="/book-tattoo" activeClassName="selected-link">Book tattoo</NavLink>
     </nav>
   );
 }

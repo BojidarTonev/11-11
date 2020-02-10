@@ -43,11 +43,14 @@
     text-align: left;
 }
 
-.artwork-button {
+.more-information .some-link a {
+    color: black !important;    
     background: var(--main-gold, red);
-    padding: 1.3em 2em;
+    padding: 1em 2em 1em 2em;
+
+    transition: all .3s ease-in-out;
 }
 
-.artwork-button .some-link a {
-    color: black !important;
+.more-information .some-link {
+    margin-top: 1.5em;
 }

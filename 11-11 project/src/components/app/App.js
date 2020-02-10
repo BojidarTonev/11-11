@@ -32,10 +32,7 @@ const App = () => {
         <Header />
         <Switch>
           <Route path="/" exact render={render("Welcome", Index)} />
-          <Route
-            path="/book-tattoo"
-            render={render("Booking tattoo", BookTattoo)}
-          />
+          <Route path="/book-tattoo" render={render("Booking tattoo", BookTattoo)} />
           <Route path="/contact" render={render("Contact me", Contact)} />
           <Route path="/artwork" render={render("Artwork", Artwork)} />
 

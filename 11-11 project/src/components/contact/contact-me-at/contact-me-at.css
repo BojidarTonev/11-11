@@ -11,6 +11,11 @@
     background: black;
 }
 
+.contact-me-at .some-link {
+    width: 3em;
+    height: 4em;
+}
+
 .contact-me-at ul {
     display: flex;
     justify-content: center;
@@ -32,4 +37,6 @@
 .contact-me-at ul li i {
     font-size: 2em;
     color: var(--main-gold, red);
+
+    transition: all .5s ease-in-out;
 }

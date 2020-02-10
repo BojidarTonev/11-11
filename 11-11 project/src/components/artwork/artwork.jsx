@@ -19,9 +19,11 @@ class Artwork extends Component {
   onDataGot = function(data) {
     let _this = this;
 
-    setInterval(function(){
+    let timeout = setTimeout(function(){
       _this.setState({ tattoos: data, loading: false })
-    }, 0)
+
+      clearTimeout(timeout)
+    }, 2000)
   }
 
   onSearchClick = function(e) {

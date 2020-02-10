@@ -73,20 +73,6 @@
     display: block
 }
 
-
-
-
-
-
-
-.search-tattoos-button:hover {
-    background: #708090;
-}
-.search-tattoos-button:hover > i {
-    color: black;
-    font-size: 2.7em;
-}
-
 .dropdowns {
     display: flex;
     align-items: center;

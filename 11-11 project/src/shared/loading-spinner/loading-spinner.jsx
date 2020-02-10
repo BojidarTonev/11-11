@@ -3,7 +3,7 @@ import "./loading-spinner.css";
 
 function LoadingSpinner() {
   return (
-    <div>
+    <div className="loading-spinner">
       
     </div>
   );
